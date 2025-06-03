@@ -1,89 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="h-100">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="">
+    <meta name="author" content="Brady Hession">
+    <meta name="generator" content="Hugo 0.84.0">
     <title>Runewerkz</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body class="dark" id="top">
-<header class="header center">
-    <h3><a href="https://github.com/Runewerkz" class="link">RW</a></h3>
-    <button id="theme-toggle" class="theme-toggle">
-        <img id="sun-icon" src="assets/icons/sun.svg" alt="Sun Icon" style="display: none; width: 24px; height: 24px;">
-        <img id="moon-icon" src="assets/icons/moon.svg" alt="Moon Icon" style="width: 24px; height: 24px;">
-    </button>
-</header>
-<main>
-    <div class="about center">
-        <h1><span class="about_name">Runewerkz</span></h1>
-        <h2 class="about_role">Magical engineering</h2>
-        <p class="about_desc">
-            We at Runewerkz, are a group of friends who have been playing games together since we were kids. Now
-            that we are older, we are dedicated to living out that dream and making the games we always dreamt of as
-            kids.
+<body class="d-flex h-100 text-center">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0">RuneWerkz</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <!--                <a class="nav-link" href="#">Projects</a>-->
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-3">
+        <h1>A New Utah Based Game Studio</h1>
+        <p class="lead">
+            Started in 2024 by a group of lifelong friends, Runewerkz is a game studio dedicated to creating immersive
+            and engaging games. Our team of passionate developers, artists, and storytellers are hard at
+            work on our first few projects.
         </p>
-    </div>
-    <section id="projects" class="section projects">
-        <h2 class="section_title">Projects</h2>
-        <div class="projects_grid">
-            <div class="project">
-                <h3>Aether</h3>
-                <p class="project_description">
-                    Play as a lonely black hole, drifting through space and gobbling up other space debris.
-                    As you consume more and more, you will continue to grow in size.
-                    This game was made over 24 Hrs as part as a friend-coordinated game Jam. There are plans to
-                    update it in the near future to address lingering bugs, general gameplay wonkiness, and update a few
-                    assets, but no longer-term development is planned.
-                </p>
-                <ul class="project_stack">
-                    <li class="project_stack-item">Unity</li>
-                    <li class="project_stack-item">C#</li>
-                    <li class="project_stack-item">Blender</li>
-                </ul>
-                <a href="" aria-label="source code" class="link link-icon">
-                    <img id="aether-github-link" src="assets/icons/github.svg" alt="Github Link Icon" style="width: 16px; height: 16px;">
-                </a>
-                <a href="https://kalean75.itch.io/aether" aria-label="live preview" class="link link-icon">
-                    <img id="aether-link" src="assets/icons/external_link.svg" alt="External Link Icon" style="width: 16px; height: 16px;">
-                </a>
-            </div>
-            <div class="project">
-                <h3>Shirtbiter</h3>
-                <p class="project_description">
-                    A tower defence inspired by the online flash games of old where you play as the eponymous
-                    shirtbiter and fend off waves of enemies.
-                    This game made over the course of a weekend for a game jam.
-                </p>
-                <ul class="project_stack">
-                    <li class="project_stack-item">Unity</li>
-                    <li class="project_stack-item">C#</li>
-                    <li class="project_stack-item">Blender</li>
-                </ul>
-                <a href="" aria-label="source code" class="link link-icon">
-                    <img id="shirtbiter-github-link" src="assets/icons/github.svg" alt="Github Link Icon" style="width: 16px; height: 16px;">
-                </a>
-                <a href="https://Runewerkz.github.io" aria-label="live preview" class="link link-icon">
-                    <img id="aether-external-link" src="assets/icons/external_link.svg" alt="External Link Icon" style="width: 16px; height: 16px;">
-                </a>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+        </p>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Aether</h5>
+                <p class="card-text">A Game where you play as a black hole floating through space, absorbing
+                    everything in your path.</p>
+                <a href="https://kalean75.itch.io/aether" class="btn btn-primary">Itch.io</a>
             </div>
         </div>
-    </section>
-</main>
-<footer class="footer">
-    <a href="https://github.com/Runewerkz" class="link footer_link">Created By Runewerkz; 2025</a>
-</footer>
-<div class="scroll-container">
-    <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-            <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
-    </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Shirtbiter</h5>
+                <p class="card-text">A tower defence, twin stick hybrid.</p>
+                <a href="#" class="btn btn-primary">Coming soon...</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p>Runewerkz 2025</p>
+    </footer>
 </div>
-<script src="js/script.js"></script>
+
+
 </body>
 </html>
